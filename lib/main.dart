@@ -40,20 +40,17 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Container(
-              margin: const EdgeInsets.all(16.0),
-              child: AspectRatio(
-                aspectRatio: 16 / 9,
-                child: Image.network(
-                  'https://picsum.photos/id/88/300/200',
-                  width: double.infinity,
-                  fit: BoxFit.cover,
-                ),
+            AspectRatio(
+              aspectRatio: 16 / 9,
+              child: Image.network(
+                'https://picsum.photos/id/88/300/200',
+                width: double.infinity,
+                fit: BoxFit.cover,
               ),
             ),
             Center(
               child: Padding(
-                padding: const EdgeInsets.symmetric(vertical: 8.0),
+                padding: const EdgeInsets.symmetric(vertical: 12.0),
                 child: Text(
                   'Jalan di Barcelona',
                   style: TextStyle(
